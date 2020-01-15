@@ -9,7 +9,7 @@ cv.imshow('Original Image',img)
 
 
 lower_range = np.array([0,0,0]) 
-upper_range = np.array([100,70,255])  
+upper_range = np.array([200,100,255])  
 mask = cv.inRange(img,lower_range,upper_range) 
 result = cv.bitwise_and(img,img,mask = mask)  
 cv.imshow('Color Detected Image',result) 
